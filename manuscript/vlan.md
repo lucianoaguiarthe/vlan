@@ -80,5 +80,5 @@
 <h3 align="left">3.1 - Configuração dos Switch ESW1</h3>
 
 
-<p align="center"><img src="images/prompt.png"  width="900" height="596" align="middle"/></p>
+<p align="center"><img src="images/prompt.png"  width="800" height="530" align="middle"/></p>
 <h4 align="middle">Figura 06 - Habilitar Visualização de Portas</h4>
