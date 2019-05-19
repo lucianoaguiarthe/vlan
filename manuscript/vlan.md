@@ -35,7 +35,7 @@
 
 <p align="justify">Iremos utilizar um software de simualação de rede desenvolvido e disponibilizado pela própria CISCO, chamado Packet Tracer, ele pode ser executado até mesmo em computadores antigos de 32 bits, para fazer o download cadastre-se no curso:</p>
 
-<p align="center"><img src="images/projeto-vlan.png"  width="800" height="457" align="middle"/></p>
+<p align="center"><img src="images/projeto-vlan.png"  width="910" height="520" align="middle"/></p>
 <h4 align="middle">Figura 03 - Componentes Roteador</h4>
 
 
