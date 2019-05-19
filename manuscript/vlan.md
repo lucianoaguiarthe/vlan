@@ -16,10 +16,10 @@
 
 <h3 align="left">1 - Entendo a Arquitetura dos Equipamentos da CISCO</h3>
 
-<p align="justify">Um roteador e um switch é um compador com função específica de interconectar redes, seu hardware funciona de uma maneira um pouco difererente de um computador pessoal, no qual nosso laboratório estará orientado, a Figura 03, apresenta a arquitetura dos componentes principais de um roteador. </p>
+<p align="justify">Um roteador e um switch é um compador com função específica de interconectar redes, seu hardware funciona de uma maneira um pouco difererente de um computador pessoal, no qual nosso laboratório estará orientado, a Figura 02, apresenta a arquitetura dos componentes principais de um roteador. </p>
 
 <p align="center"><img src="images/03-roteador.png"  width="400" height="240" align="middle"/></p>
-<h4 align="middle">Figura 03 - Componentes Roteador</h4>
+<h4 align="middle">Figura 02 - Componentes Roteador</h4>
 
 *  <b>RAM</b> – Armazena as tabelas de roteamento e o arquivo de configuração temporário do roteador;<p>
 * <b>NVRAM</b> – Armazena o arquivo de configuração que será utilizado na inicialização (startup config), não ocorre perca das informações armazenadas na NVRAM ao desligar o roteador;<p>
@@ -33,10 +33,17 @@
 
 <h3 align="left">2 - Preparando o Ambiente para Realizar o Laboratório</h3>
 
-<p align="justify">Iremos utilizar um software de simualação de rede desenvolvido e disponibilizado pela própria CISCO, chamado Packet Tracer, ele pode ser executado até mesmo em computadores antigos de 32 bits, para fazer o download cadastre-se no curso:</p>
+<p align="justify">O ambiente de simulação proposto contará com 3 (três) switchs, 03 (três) vlans, 06 (seis) Container Debian e um Router que irá fazer a comunicação entre as vlans, a Figura 03, apresenta a arquitetura deste ambiente com nome de vlans, enderaçamento de interfaces e portas a serem usadas, é importante pontuar que ao criar este ambiente no GNS3 deve-se seguir rigorosamenete as portas apresentadas na imagem.</p>
 
 <p align="center"><img src="images/projeto-vlan.png"  width="910" height="520" align="middle"/></p>
-<h4 align="middle">Figura 03 - Componentes Roteador</h4>
+<h4 align="middle">Figura 03 - Laboratório vlan</h4>
+
+
+<p align="justify">Para melhor visualização habilite a visualização das portas dos equipamentos, conforme apresentado na Figura 04, Menu View => Show/Hide interface labes.</p>
+
+<p align="center"><img src="images/interfaces-show.png"  width="600" height="662" align="middle"/></p>
+<h4 align="middle">Figura 04 - Habilitar Visuação de Portas</h4>
+
 
 
 <p align="justify">É um curso gratuíto de 10 horas, que não tem obrigatoriedade de sua realização, mas já disponibiliza conteúdo e a o download da ferramenta. O mais importante é que você pode até achar o arquivo de instalação do Packet Tracer na internert, todavia para liberar todas as funcionalidades da ferramenta é necessário um login criado no cadastro deste curso, vou disponiblizar a seguir o arquivo para download direto que salvei no google drive:</p>
