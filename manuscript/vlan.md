@@ -17,6 +17,7 @@
 <h3 align="left">1 - Entendo a Arquitetura dos Equipamentos da CISCO</h3>
 
 <p align="justify">Um roteador e um switch é um compador com função específica de interconectar redes, seu hardware funciona de uma maneira um pouco difererente de um computador pessoal, no qual nosso laboratório estará orientado, a Figura 03, apresenta a arquitetura dos componentes principais de um roteador. </p>
+
 <p align="center"><img src="images/03-roteador.png"  width="400" height="240" align="middle"/></p>
 <h4 align="middle">Figura 03 - Componentes Roteador</h4>
 
@@ -30,12 +31,13 @@
 <p align="center" ><img src="images/aviso-importante.png"  width="300" height="130" align="middle"/></p>
 <p align="justify">Todas as configurações realizadas em um roteador são salvas na RAM, portanto é um dado volátil, ocorrendo o desligamento inesperado a configuração feita é <b>PERDIDA</b>, daí a necessidade de salvar constante o que foi realizado na NVRAM através do comando: <i>copy running-config startup-config</i>.</p>
 
-<h3 align="left">5.2 - Preparando o Ambiente para Realizar o Laboratório</h3>
+<h3 align="left">2 - Preparando o Ambiente para Realizar o Laboratório</h3>
 
 <p align="justify">Iremos utilizar um software de simualação de rede desenvolvido e disponibilizado pela própria CISCO, chamado Packet Tracer, ele pode ser executado até mesmo em computadores antigos de 32 bits, para fazer o download cadastre-se no curso:</p>
 
+<p align="center"><img src="images/projeto-vlan.png"  width="800" height="457" align="middle"/></p>
+<h4 align="middle">Figura 03 - Componentes Roteador</h4>
 
-[Introduction to Packet Tracer](https://www.microsoft.com/pt-BR/download/details.aspx?id=45520)
 
 <p align="justify">É um curso gratuíto de 10 horas, que não tem obrigatoriedade de sua realização, mas já disponibiliza conteúdo e a o download da ferramenta. O mais importante é que você pode até achar o arquivo de instalação do Packet Tracer na internert, todavia para liberar todas as funcionalidades da ferramenta é necessário um login criado no cadastro deste curso, vou disponiblizar a seguir o arquivo para download direto que salvei no google drive:</p>
 
