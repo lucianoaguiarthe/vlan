@@ -93,4 +93,6 @@
 <p align="justify">Para inclusão das interfaces nas vlans configuradas deve-se acessar individualmente o prompt das interfaces e configurar em modo acesso (para interfaces que fazem para de somente uma vlan) ou modo trunk (interfaces que transmitem tráfego de várias vlans). Em nosso laboratório a interface do switch ESW1 f1/1 deve ser configurada em modo trunk, a interface f1/2 em modo acesso para a vlan 10 e interface f1/3 em modo acesso para a vlan 50, conforme apresentado na Figura 08.</p>
 
 <p align="center"><img src="images/int-sw1.png"  width="470" height="264" align="middle"/></p>
-<h4 align="middle">Figura 07 - Configuração vlan</h4>
+<h4 align="middle">Figura 08 - Inclusão de Interfaces na Vlan</h4>
+
+<p align="justify">Para salvar as configurações realizadas digite o comando <b>copy running-config startup-config</b></p>
