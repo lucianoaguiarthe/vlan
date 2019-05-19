@@ -85,5 +85,5 @@
 
 <h2 align="middle">Criando Vlan</h2>
 <p align="justify">Acesse o prompt de configuração com o comando conf t, acesse o prompt de configuração da vlan com o comando vlan 10, atribua o nome da vlan com o comando name contabilidade, conforme apresentado na Figura 07:</p>
-<p align="center"><img src="images/vlan-conf.png"  width="700" height="241" align="middle"/></p>
+<p align="center"><img src="images/vlan-conf.png"  width="550" height="208" align="middle"/></p>
 <h4 align="middle">Figura 06 - Prompt Switch</h4>
