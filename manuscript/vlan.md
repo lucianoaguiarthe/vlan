@@ -44,28 +44,19 @@
 <p align="center"><img src="images/interfaces-show.png"  width="400" height="441" align="middle"/></p>
 <h4 align="middle">Figura 04 - Habilitar Visualização de Portas</h4>
 
+<p align="justify">Os dispositivos de rede são adicinados pelo botão <b>Browse all devices</b>, apontado pela seta na Figura 5, clique e arraste os dispositivos para área de configuração, neste laboratório foram utilizados como Switch o <b>EtherSwitch c3727</b>, como Roteador o <b>Router C7200</b> e como cliente o <b>Container Debian</b></p>
 
+<p align="center"><img src="images/devices.png"  width="400" height="513" align="middle"/></p>
+<h4 align="middle">Figura 05 - Habilitar Visualização de Portas</h4>
+
+<p align="center" ><img src="images/aviso-importante.png"  width="300" height="130" align="middle"/></p>
+
+<p align="center" ><b>Lembre-se de deixar seu laboratório identico ao da Figura 03</b></p>
 
 <p align="justify">É um curso gratuíto de 10 horas, que não tem obrigatoriedade de sua realização, mas já disponibiliza conteúdo e a o download da ferramenta. O mais importante é que você pode até achar o arquivo de instalação do Packet Tracer na internert, todavia para liberar todas as funcionalidades da ferramenta é necessário um login criado no cadastro deste curso, vou disponiblizar a seguir o arquivo para download direto que salvei no google drive:</p>
 
-[Packet Tracer - 32 bits](https://drive.google.com/open?id=10PJHweyAjtvTW5J4JWVAGVdsNSeJKk9f)
 
-[Packet Tracer - 64 bits](https://drive.google.com/open?id=1v3oJeTjKZX5XFH3iwGnDYITVQ1u1FQG_)
+<h3 align="left">3 - Execução do Laboratório</h3>
+<p align="justify">Conforme abordado no Item 1, o arquivo temporário de configuração de um roteador fica localizado na RAM, toda configuração que está sendo digitada e feita durante o laboratório encontra-se na RAM, salva em um arquivo chamado <b>running-config</b>, caso ocorra um desligamento do router ou switch, toda a configuração será perdida. </p>
 
-[Packet Tracer - Linux](https://drive.google.com/open?id=10dGsuiEm2PqPYw1F5qqx2Pkdquy4sOBQ)
-
-<p align="justify">Após o download faça a instalação do aplicativo que é muito simples, realize o login no mesmo, é o usuário que você cadastrou para ter acesso ao curso, e faça o download do arquivo do laboratório disponiblizado abaixo:</p>
-
-[Laboratório - Roteamento Dinâmico RIP](https://drive.google.com/open?id=1H6cVuwK_GAYC0BXm2RTWAelJVvFJ1O6D)
-
-Menu Options => Preferences
- 
-<h3 align="left">5.3 - Execução do Laboratório</h3>
-<p align="justify">Ao abrir o arquivo baixado no link acima, o Packet Tracer será aberto com duas telas, uma com o wizard que apresentará seus acerto no final e a outra com o diagrama de rede no qual você irá configurar, Figura4. </p>
-<p align="center"><img src="images/roteamento/04-lab-packettracer.png"  width="900" height="448" align="middle"/></p>
-<h4 align="middle">Figura 04 - Laboratório Packet Tracer</h4>
-
-<p align="justify">Objetivo do Laboratório:</p>
-*  Congigurar o endereçamento IP em todos os dispositivos do ambiente;<p>
-* Configurar o Roteamento Dinâmico RIP no <b>Router1</b> e <b>Router2</b> para que o <b>PC0</b> possa se comunicar com o <b>PC1</b>;<p>
-
+<p align="justify">Para que a configuração feita não se perca, deve-se salvar seu conteúdo na NVRAM em um arquivo chamado <b>startup-config</b>, no qual a cada inicialização do Sistema Operacional (SO), esta configuração é carregada. O procedimento para salvar o conteúdo da RAM na NVRAM é através do comando <b>copy running-config startup-config</b>, devendo ser executado no prompt privilegiado.</p>
