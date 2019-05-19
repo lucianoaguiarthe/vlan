@@ -6,32 +6,17 @@
 <p align="center"><img src="images/vlan.jpg"  width="650" height="340" align="middle"/></p>
 <h4 align="middle">Figura 01 - Virtual Lan (VLAN)</h4>
 
-<p align="justify">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no link abaixo:</p>
+<p align="justify">No laboratório será criado um ambiente similar ao apresentado na Figura 01, para isso iremos utilizar o Software de Simulação de Rede para equipamentos da CISCO <a href="https://www.gns3.com/">GNS3</a>, vale ressaltar que o GNS3 possui suporte para executar de Container Docker, no qual será utilizado um Container com Debian. Preparei um Appliance que já vem com as imagens do IOS (Sistema Operacional CISCO), bem como o GNS3 instalado no link abaixo:</p>
 
 [Appliance GNS3](https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7) 
 
 
+<p align="justify">O usuário padrão para login na interface gráfica do sistema é <b>gns3</b> e a senha tanto deste usuário quanto do <b>root</b> é  <b>123456</b></p>
 
 
-<p align="justify">Conforme apresentado no diagrama de rede acima Fig. 01 o IP da interface <b>enp0s3</b> é 192.168.5.1, a senha tanto do usuário <b>root</b> como do usuário <b>aluno</b> é <b>123456</b></p>
+<h3 align="left">1 - Entendo a Arquitetura dos Equipamentos da CISCO</h3>
 
-<p align="justify">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho, conforme configuração da máquina que estará executando o Appliance. Podemos observar a alocação de memória desejada na Fig. 02.</p>
-
-<p align="center"><img src="images/samba/02_virtualbox.png"  width="800" height="493" align="middle"/></p>
-<h4 align="middle">Figura 02 - Alocação de Memória VM</h4>
-
-
-## INSTALAÇÃO SAMBA
-
-<p align="justify">Para instalação do Samba devemos baixar os pacotes: samba, kerbero, smbcliente e winbind, conforme comando a seguir:</p>
-
-
-
-
-
-<h3 align="left">5.1 - Entendo a Arquitetura de um Roteador</h3>
-
-<p align="justify">Um roteador é um compador com função específica de interconectar redes, seu hardware funciona de uma maneira um pouco difererente de um computador pessoal, um dos principais fabricantes do mercado é a CISCO, no qual nosso laboratório estará orientado, a Figura 03, apresenta a arquitetura dos componentes principais de um roteador. </p>
+<p align="justify">Um roteador e um switch é um compador com função específica de interconectar redes, seu hardware funciona de uma maneira um pouco difererente de um computador pessoal, no qual nosso laboratório estará orientado, a Figura 03, apresenta a arquitetura dos componentes principais de um roteador. </p>
 <p align="center"><img src="images/03-roteador.png"  width="400" height="240" align="middle"/></p>
 <h4 align="middle">Figura 03 - Componentes Roteador</h4>
 
