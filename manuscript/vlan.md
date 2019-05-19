@@ -3,7 +3,7 @@
 
 <p align="justify">O aumento escalar de uma rede impacta diretamente no aumento de colisão, envio de <i>broadcast</i>, bem como uma insegurança no ambiente, considerando que todos os departamento de uma empresa ou órgão encontram-se inteconectados na mesma redes. Para sanar estes problemas Virtual Lan (VLAN) são criadas, nos quais implementam-se no switch uma segmentação lógica na rede, mapeando as portas dos dispositivos dentro do segmento ao qual necessita-se fazer seu agrupamento, como por setor de uma empresa: Recurso Humanos, Contabilidade, Adminstrativo, etc. A Figura 01 apresenta um exemplo de rede com vlan no qual equipamentos em switchs distintos fazem parte da mesma vlan.</p>
 
-<p align="center"><img src="images/vlan.jpg"  width="700" height="366" align="middle"/></p>
+<p align="center"><img src="images/vlan.jpg"  width="650" height="340" align="middle"/></p>
 <h4 align="middle">Figura 01 - Virtual Lan (VLAN)</h4>
 
 <p align="justify">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no link abaixo:</p>
