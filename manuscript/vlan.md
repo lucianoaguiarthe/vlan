@@ -60,3 +60,25 @@
 <p align="justify">Conforme abordado no Item 1, o arquivo temporário de configuração de um roteador fica localizado na RAM, toda configuração que está sendo digitada e feita durante o laboratório encontra-se na RAM, salva em um arquivo chamado <b>running-config</b>, caso ocorra um desligamento do router ou switch, toda a configuração será perdida. </p>
 
 <p align="justify">Para que a configuração feita não se perca, deve-se salvar seu conteúdo na NVRAM em um arquivo chamado <b>startup-config</b>, no qual a cada inicialização do Sistema Operacional (SO), esta configuração é carregada. O procedimento para salvar o conteúdo da RAM na NVRAM é através do comando <b>copy running-config startup-config</b>, devendo ser executado no prompt privilegiado.</p>
+
+<p align="justify">Será seguida a seguinte sequência de configuração dos equipamentos:</p>
+
+1. Configuração dos Switchs;
+2. Configuração dos Clientes Debian; e,
+3. Configuração do Router.
+
+<p align="justify">Em algumas situações esta ordem não será seguida no roteiro, todavia será explicitado ao longo deste manual</p>
+
+<h3 align="left">3.1 - Configuração dos Switchs</h3>
+
+<p align="justify">As configurações necessárias para implentação de VLAN neste ambiente é a criação da vlan, e o modo como as portas estarão operado:</p>
+
+* Modo Trunk - Quando na porta existe a necessidade de trafegar pacotes de mais de uma vlan;
+* Modo Access - Quando na porta está trafegando <b>exclusivamente</b> pacotes de somente uma vlan.
+
+
+<h3 align="left">3.1 - Configuração dos Switch ESW1</h3>
+
+
+<p align="center"><img src="images/prompt.png"  width="900" height="596" align="middle"/></p>
+<h4 align="middle">Figura 06 - Habilitar Visualização de Portas</h4>
