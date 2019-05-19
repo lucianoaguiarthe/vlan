@@ -42,7 +42,7 @@
 <p align="justify">Para melhor visualização habilite a visualização das portas dos equipamentos, conforme apresentado na Figura 04, Menu View => Show/Hide interface labes.</p>
 
 <p align="center"><img src="images/interfaces-show.png"  width="400" height="441" align="middle"/></p>
-<h4 align="middle">Figura 04 - Habilitar Visuação de Portas</h4>
+<h4 align="middle">Figura 04 - Habilitar Visualização de Portas</h4>
 
 
 
