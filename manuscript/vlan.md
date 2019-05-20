@@ -122,5 +122,5 @@
 
 <p align="justify">Considerando que neste laboratório existem 3 (três) vlans utilizadas, e apesar de no switch ESW3 existir somente a vlan 100 e 50 serão criadas todas, para futuras demandas.</p>
 
-<p align="center"><img src="images/vlan-conf-esw3-v2.png"  width="480" height="182" align="middle"/></p>
+<p align="center"><img src="images/vlan-conf-esw3-v2.png"  width="530" height="200" align="middle"/></p>
 <h4 align="middle">Figura 11 - Configuração vlan ESW3</h4>
