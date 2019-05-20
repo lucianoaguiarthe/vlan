@@ -77,7 +77,7 @@
 * Modo Access - Quando na porta está trafegando <b>exclusivamente</b> pacotes de somente uma vlan.
 
 
-<h3 align="left">3.1 - Configuração dos Switch ESW1</h3>
+<h3 align="left">3.1.1 - Configuração dos Switch ESW1</h3>
 
 <p align="justify">Após concluir a configuração do desenho do ambiente, e linkar todos os dispositivos, inicialize os equipamentos com o botão Start (localizado logo abaixo do menu <b>Annotate</b>), ao dar dois cliques em cima do desenho do Switch ESW1 será aberto o prompt de configuração, e carregado o SO do equipamento conforme Figura 06.</p>
 <p align="center"><img src="images/prompt.png"  width="700" height="464" align="middle"/></p>
@@ -97,7 +97,7 @@
 
 <p align="justify">Para salvar as configurações realizadas digite o comando <b>copy running-config startup-config</b></p>
 
-<h3 align="left">3.1 - Configuração dos Switch ESW2</h3>
+<h3 align="left">3.1.2 - Configuração dos Switch ESW2</h3>
 <p align="justify">Não entrarei em muitos detalhes quanto o comandos de configuração, considerando que já expliquei todos durante a configuração do Switch ESW1.</p>
 
 <h2 align="middle">Criando Vlan - ESW2</h2>
@@ -113,7 +113,7 @@
 <p align="center"><img src="images/int-esw2-v2.png"  width="550" height="434" align="middle"/></p>
 <h4 align="middle">Figura 10 - Inclusão de Interfaces na Vlan - ESW2</h4>
 
-<h3 align="left">3.2 - Configuração dos Switch ESW3</h3>
+<h3 align="left">3.1.3 - Configuração dos Switch ESW3</h3>
 
 <p align="justify">As configurações no switch ESW3 são similares as realizadas anteriormente, levando em consideração que a porta trunk será a f1/15 que conecta ao switch ESW2.</p>
 
@@ -131,3 +131,39 @@
 
 <p align="center"><img src="images/int-esw3.png"  width="650" height="255" align="middle"/></p>
 <h4 align="middle">Figura 11 - Inclusão de Interfaces na Vlan - ESW3</h4>
+
+<h3 align="left">3.2 - Configuração dos Clientes Debian</h3>
+
+<p align="justify">Os clientes do ambiente são containeres executando o SO Debian, existe ainda a necessidade de criação de rotas para as redes que não fazem parte da vlan de origem.</p>
+
+<p align="justify">A seguir será apresetando as configurações de maneira individual de cada cliente, ressalto que o comando <i><b>ip addr add</b></i> tem como o objetivo atribuir um ip a uma inteface específica, e o comando <b><i>ip route add</b></i> a criação de rotas.</p>
+
+<h2 align="middle">Cliente Debian-1</h2>
+<p align="justify">ip addr add 192.168.10.10/24 dev eth0</p>
+<p align="justify">ip route add 192.168.50.0/24 via 192.168.10.1 dev eth0</p>
+<p align="justify">ip route add 192.168.100.0/24 via 192.168.10.1 dev eth0</p>
+
+<h2 align="middle">Cliente Debian-2</h2>
+<p align="justify">ip addr add 192.168.50.10/24 dev eth0</p>
+<p align="justify">ip route add 192.168.10.0/24 via 192.168.50.1 dev eth0</p>
+<p align="justify">ip route add 192.168.100.0/24 via 192.168.50.1 dev eth0</p>
+
+<h2 align="middle">Cliente Debian-3</h2>
+<p align="justify">ip addr add 192.168.10.11/24 dev eth0</p>
+<p align="justify">ip route add 192.168.50.0/24 via 192.168.10.1 dev eth0</p>
+<p align="justify">ip route add 192.168.100.0/24 via 192.168.10.1 dev eth0</p>
+
+<h2 align="middle">Cliente Debian-4</h2>
+<p align="justify">ip addr add 192.168.100.10/24 dev eth0</p>
+<p align="justify">ip route add 192.168.10.0/24 via 192.168.100.1 dev eth0</p>
+<p align="justify">ip route add 192.168.50.0/24 via 192.168.100.1 dev eth0</p>
+
+<h2 align="middle">Cliente Debian-5</h2>
+<p align="justify">ip addr add 192.168.100.11/24 dev eth0</p>
+<p align="justify">ip route add 192.168.10.0/24 via 192.168.100.1 dev eth0</p>
+<p align="justify">ip route add 192.168.50.0/24 via 192.168.100.1 dev eth0</p>
+
+<h2 align="middle">Cliente Debian-6</h2>
+<p align="justify">ip addr add 192.168.50.11/24 dev eth0</p>
+<p align="justify">ip route add 192.168.10.0/24 via 192.168.50.1 dev eth0</p>
+<p align="justify">ip route add 192.168.100.0/24 via 192.168.50.1 dev eth0</p>
