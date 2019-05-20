@@ -167,3 +167,12 @@
 <p align="justify">ip addr add 192.168.50.11/24 dev eth0</p>
 <p align="justify">ip route add 192.168.10.0/24 via 192.168.50.1 dev eth0</p>
 <p align="justify">ip route add 192.168.100.0/24 via 192.168.50.1 dev eth0</p>
+
+<h3 align="left">3.2 - Configuração do Router</h3>
+
+<p align="justify">O papel do Router neste ambiente é fazer a comunicação entre as vlans, a sua existência é uma prerrogativa somente se existir esta necessidade de comunicação entre elas. A sua configuração neste casos é muito básica, havendo a necessidade de atribuir ip para as subinterfaces (interfaces lógicas) para cada vlan e informar o id das mesmas.</p>
+
+<p align="justify">A seguir será apresentado a sequência de comandos necessários.</p>
+
+<p align="center"><img src="images/conf-router.png"  width="700" height="359" align="middle"/></p>
+<h4 align="middle">Figura 12 - Configuração Router</h4>
