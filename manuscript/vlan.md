@@ -124,3 +124,10 @@
 
 <p align="center"><img src="images/vlan-conf-esw3-v2.png"  width="530" height="200" align="middle"/></p>
 <h4 align="middle">Figura 11 - Configuração vlan ESW3</h4>
+
+<h2 align="middle">Inclusão das Interfaçes na Vlan - ESW3</h2>
+
+<p align="justify">Neste equipamento a porta f1/0 faz parte da vlan 100 (modo access), a porta f1/1 faz parte da vlan 50 (modo access) e a porta f1/15 irá operar em modo trunk no qual irá passar o tráfego de mais de uma vlan, conforme apresentado na Figura 11.</p>
+
+<p align="center"><img src="images/int-esw3.png"  width="650" height="255" align="middle"/></p>
+<h4 align="middle">Figura 11 - Inclusão de Interfaces na Vlan - ESW3</h4>
