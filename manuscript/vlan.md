@@ -83,16 +83,32 @@
 <p align="center"><img src="images/prompt.png"  width="700" height="464" align="middle"/></p>
 <h4 align="middle">Figura 06 - Prompt Switch</h4>
 
-<h2 align="middle">Criando Vlan</h2>
+<h2 align="middle">Criando Vlan - ESW1</h2>
 <p align="justify">Acesse o prompt de configuração com o comando <b>conf t</b>, acesse o prompt de configuração da vlan com o comando <b>vlan 10</b>, atribua o nome da vlan com o comando <b>name contabilidade</b>, por fim saia do prompt da interface com o comando <b>exit</b>, repita o procedimento para criar as outras 03 (três) vlans conforme apresentado na Figura 07: </p>
 <p align="center"><img src="images/vlan-conf3.png"  width="480" height="196" align="middle"/></p>
-<h4 align="middle">Figura 07 - Configuração vlan</h4>
+<h4 align="middle">Figura 07 - Configuração vlan ESW1</h4>
 
-<h2 align="middle">Inclusão das Interfaçes na Vlan</h2>
+<h2 align="middle">Inclusão das Interfaçes na Vlan - ESW1</h2>
 
 <p align="justify">Para inclusão das interfaces nas vlans configuradas deve-se acessar individualmente o prompt das interfaces e configurar em modo acesso (para interfaces que fazem para de somente uma vlan) ou modo trunk (interfaces que transmitem tráfego de várias vlans). Em nosso laboratório a interface do switch ESW1 f1/1 deve ser configurada em modo trunk, a interface f1/2 em modo acesso para a vlan 10 e interface f1/3 em modo acesso para a vlan 50, conforme apresentado na Figura 08.</p>
 
 <p align="center"><img src="images/int-sw1.png"  width="470" height="264" align="middle"/></p>
-<h4 align="middle">Figura 08 - Inclusão de Interfaces na Vlan</h4>
+<h4 align="middle">Figura 08 - Inclusão de Interfaces na Vlan - ESW1</h4>
 
 <p align="justify">Para salvar as configurações realizadas digite o comando <b>copy running-config startup-config</b></p>
+
+<h3 align="left">3.1 - Configuração dos Switch ESW2</h3>
+<p align="justify">Não entrarei em muitos detalhes quanto o comandos de configuração, considerando que já expliquei todos durante a configuração do Switch ESW1.</p>
+
+<h2 align="middle">Criando Vlan - ESW2</h2>
+<p align="justify">Em todos os switchs deve-se criar as mesmas vlans, o que vai diferenceiar nas configurações são as portas que farão parte da vlan, e quais estarão operando em modo trunk, a Figura 09, apresenta sequência de criação das Vlans no Switch ESW2:</p>
+
+<p align="center"><img src="images/vlan-conf-esw2.png"  width="480" height="207" align="middle"/></p>
+<h4 align="middle">Figura 09 - Configuração vlan ESW2</h4>
+
+<h2 align="middle">Inclusão das Interfaçes na Vlan - ESW2</h2>
+
+<p align="justify">Um ponto importante a se destacar na configuração das interfaçes no switch ESW2 é que teremos 03 (três) interfaces em modo trunk, as que conectam aos switchs (f1/1 e f1/15) e a que conecta o switch ao router (f1/0), a sequência de configuração é apresentanda na Figura 10.</p>
+
+<p align="center"><img src="images/int-esw2.png"  width="550" height="465" align="middle"/></p>
+<h4 align="middle">Figura 10 - Inclusão de Interfaces na Vlan - ESW2</h4>
