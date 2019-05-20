@@ -113,4 +113,14 @@
 <p align="center"><img src="images/int-esw2-v2.png"  width="550" height="434" align="middle"/></p>
 <h4 align="middle">Figura 10 - Inclusão de Interfaces na Vlan - ESW2</h4>
 
-<h3 align="left">3.1 - Configuração dos Switch ESW3</h3>
+<h3 align="left">3.2 - Configuração dos Switch ESW3</h3>
+
+<p align="justify">As configurações no switch ESW3 são similares as realizadas anteriormente, levando em consideração que a porta trunk será a f1/15 que conecta ao switch ESW2.</p>
+
+
+<h2 align="middle">Criando Vlan - ESW3</h2>
+
+<p align="justify">Considerando que neste laboratório existem 3 (três) vlans utilizadas, e apesar de no switch ESW3 existir somente a vlan 100 e 50 serão criadas todas, para futuras demandas.</p>
+
+<p align="center"><img src="images/vlan-conf-esw3-v2.png"  width="480" height="182" align="middle"/></p>
+<h4 align="middle">Figura 11 - Configuração vlan ESW3</h4>
