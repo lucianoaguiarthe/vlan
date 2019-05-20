@@ -174,5 +174,5 @@
 
 <p align="justify">A seguir será apresentado a sequência de comandos necessários.</p>
 
-<p align="center"><img src="images/conf-router.png"  width="700" height="359" align="middle"/></p>
+<p align="center"><img src="images/conf-router.png"  width="650" height="334" align="middle"/></p>
 <h4 align="middle">Figura 12 - Configuração Router</h4>
