@@ -181,7 +181,7 @@
 <h4 align="middle">Figura 12 - Configuração Router</h4>
 
 
-<h3 align="left">3.2 - Comando Importantes</h3>
+<h3 align="left">3.3 - Comando Importantes</h3>
 
 <p align="justify"> O IOS da CISCO possui uma série de comandos de configuração e visualição de status, irei repassar alguns a seguir que tem uma relação com o laboratório.</p>
 
@@ -195,3 +195,19 @@
 <p align="justify">Para visualizar as interfaces que estão operaando em modo trunk use o comando <b>show interaces trunk</b>, conforme Figura 14</p>
 <p align="center"><img src="images/show-trunk.png"  width="650" height="472" align="middle"/></p>
 <h4 align="middle">Figura 14 - Visualizar Interfaces em Modo Trunk</h4>
+
+<p align="justify">Para visualizar o arquivo de configuração da RAM <b>show running-config</b></p>
+
+<p align="justify">Para visualizar o arquivo de configuração da NVRAM <b>show startup-config</b></p>
+
+<h3 align="left">3.4 - Testes do Ambiente</h3>
+
+<p align="justify">Para verificar se a configuração realizada está correta, tente fazer a comunicação do cliente para o router com o comando ping <-ip do router->, e tente fazer a comunicação entre as vlans, tentando pingar em todos os container Debian do ambiente.</p>
+
+<h3 align="left">4 - Conclusão</h3>
+
+<p align="justify">Ao final do laboratório você deve compreender alguns aspectos importantes como:</p>
+
+*  <p align="justify">o id da vlan, que mesmo estando em switchs diferente e de diferentes marcas, utilizando o mesmo id e mesmo nome a comunicação ocorrerá entre os equipamentos da vlan.</p>
+*  <p align="justify">O uso de router no ambiente só deve-se levar em consideração quando da necessidade de comunicação entre as vlans</p>
+*  <p align="justify">A necessidade de criação de rotas no cliente para que ocorra comunicação entre VLans distintas quando ocorrer um esquema de endereçamento diferente da vlan de origem</p>
