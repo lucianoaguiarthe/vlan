@@ -110,5 +110,7 @@
 
 <p align="justify">Um ponto importante a se destacar na configuração das interfaçes no switch ESW2 é que teremos 03 (três) interfaces em modo trunk, as que conectam aos switchs (f1/1 e f1/15) e a que conecta o switch ao router (f1/0), a sequência de configuração é apresentanda na Figura 10.</p>
 
-<p align="center"><img src="images/int-esw2.png"  width="550" height="465" align="middle"/></p>
+<p align="center"><img src="images/int-esw2-v2.png"  width="550" height="434" align="middle"/></p>
 <h4 align="middle">Figura 10 - Inclusão de Interfaces na Vlan - ESW2</h4>
+
+<h3 align="left">3.1 - Configuração dos Switch ESW3</h3>
