@@ -172,7 +172,26 @@
 
 <p align="justify">O papel do Router neste ambiente é fazer a comunicação entre as vlans, a sua existência é uma prerrogativa somente se existir esta necessidade de comunicação entre elas. A sua configuração neste casos é muito básica, havendo a necessidade de atribuir ip para as subinterfaces (interfaces lógicas) para cada vlan e informar o id das mesmas.</p>
 
-<p align="justify">A seguir será apresentado a sequência de comandos necessários.</p>
+<p align="justify">A seguir, Figura 12, será apresentado a sequência de comandos necessários, lembrando que o comando <b>conf t</b>, é para entrar no prompt de configuração.</p>
+
+
+<p align="justify">Em cada subinterface deve-se habilitar o encapsulamento e informar o id da vlan que estará se comunicando com ela com o comando <b>encapsulation dot1Q id</b>.</p>
 
 <p align="center"><img src="images/conf-router.png"  width="650" height="334" align="middle"/></p>
 <h4 align="middle">Figura 12 - Configuração Router</h4>
+
+
+<h3 align="left">3.2 - Comando Importantes</h3>
+
+<p align="justify"> O IOS da CISCO possui uma série de comandos de configuração e visualição de status, irei repassar alguns a seguir que tem uma relação com o laboratório.</p>
+
+<p align="justify">Para visualizar as Vlans Criadas nos Switchs, digite <b>end</b> para sair de qualquer prompt e em seguir use o comando a seguir</p>
+
+<p align="justify">show vlan-switch brief, conforme apresentado na Figura 13</p>
+
+<p align="center"><img src="images/show-vlan.png"  width="800" height="351" align="middle"/></p>
+<h4 align="middle">Figura 13 - Visualizar Vlans Criadas</h4>
+
+<p align="justify">Para visualizar as interfaces que estão operaando em modo trunk use o comando <b>show interaces trunk</b>, conforme Figura 14</p>
+<p align="center"><img src="images/show-trunk.png"  width="650" height="472" align="middle"/></p>
+<h4 align="middle">Figura 14 - Visualizar Interfaces em Modo Trunk</h4>
