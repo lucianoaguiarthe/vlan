@@ -53,9 +53,6 @@
 
 <p align="center" ><b>Lembre-se de deixar seu laboratório identico ao da Figura 03</b></p>
 
-<p align="justify">É um curso gratuíto de 10 horas, que não tem obrigatoriedade de sua realização, mas já disponibiliza conteúdo e a o download da ferramenta. O mais importante é que você pode até achar o arquivo de instalação do Packet Tracer na internert, todavia para liberar todas as funcionalidades da ferramenta é necessário um login criado no cadastro deste curso, vou disponiblizar a seguir o arquivo para download direto que salvei no google drive:</p>
-
-
 <h3 align="left">3 - Execução do Laboratório</h3>
 <p align="justify">Conforme abordado no Item 1, o arquivo temporário de configuração de um roteador fica localizado na RAM, toda configuração que está sendo digitada e feita durante o laboratório encontra-se na RAM, salva em um arquivo chamado <b>running-config</b>, caso ocorra um desligamento do router ou switch, toda a configuração será perdida. </p>
 
